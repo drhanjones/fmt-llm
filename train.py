@@ -53,7 +53,7 @@ ffw_dim = None
 wm_mask = False # whether to use a mask for the attention layer
 wm_decay_length = None #setting to none and after configurator is run, if config doesn't provide a value, set to block_size
 wm_decay_rate = 2 # how fast to decay the mask
-wm_decay_type = "linear" # Type of decay to apply to the matrix #linear, exponential, inverse_sigmoid, custom_logistic
+wm_decay_type = "power_law" # Type of decay to apply to the matrix #linear, exponential, inverse_sigmoid, custom_logistic
 wm_decay_echoic_memory = 1 #Echoic memory for the decay matrix, first n values where "effect of decay" is not applied, where memory is supposedly perfect
 
 
@@ -163,7 +163,6 @@ if os.path.exists(meta_path):
 if wm_decay_length is None:
     wm_decay_length = block_size
 
-# Setting head size as 3 times n_embd if not set already
 if head_size_qkv is None:
     head_size_qkv = n_embd
 

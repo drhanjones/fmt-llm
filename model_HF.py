@@ -185,7 +185,7 @@ class GPTConfig(PretrainedConfig):
         wm_mask=False,
         wm_decay_length=1024,
         wm_decay_rate=1,
-        wm_decay_type="linear",
+        wm_decay_type="power_law",
         wm_decay_echoic_memory=1,
         **kwargs
     ):

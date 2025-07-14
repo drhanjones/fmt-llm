@@ -170,7 +170,7 @@ class GPTConfig:
     wm_mask: bool = False
     wm_decay_length: int = 1024
     wm_decay_rate: int = 1
-    wm_decay_type: str = "linear"
+    wm_decay_type: str = "power_law"
     wm_decay_echoic_memory: int = 1
 
 

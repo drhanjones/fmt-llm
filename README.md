@@ -7,7 +7,7 @@ Currently, this codebase contains the training code for the fleeting memory tran
 
 ## Acknowledgements
 
-This codebase builds on [Andrej Karpathy's NanoGPT](https://github.com/karpathy/nanoGPT). 
+The codebase builds on [Andrej Karpathy's NanoGPT](https://github.com/karpathy/nanoGPT). 
 
 
 ## Prerequisites
@@ -50,8 +50,10 @@ sbatch --export=config_file_name=config/sample_config.py run.sh
 ```
 
 ## Dataset
+The dataset and instructions for downloading or preparing it are located in the [`data/README.md`](data/README.md) file. Please refer to that file for details.
+
 
 
 ## Config parameters
-
+The config parameters for training are located in the [`config/README.md`](config/README.md) file. The parameters can be passed as command line arguments or through a config file.
 
