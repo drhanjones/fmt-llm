@@ -1,9 +1,7 @@
 # Human-like fleeting memory improves language learning but impairs reading time prediction in transformer language models
 
 ## Introduction
-This repository contains code for the paper - Human-like fleeting memory improves language learning but impairs reading time prediction in transformer language models. 
-
-Currently, this codebase contains the training code for the fleeting memory transformer models. 
+This repo contains the PyTorch implementation of the Fleeting Memory Transformer, and code to execute all the training runs and experiments from the paper “Human-like fleeting memory improves language learning but impairs reading time prediction in transformer language models", by Thamma & Heilbron  
 
 ## Acknowledgements
 
